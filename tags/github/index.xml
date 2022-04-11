@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on Dev::Blog</title>
+    <link>https://devb.fun/tags/github/</link>
+    <description>Recent content in github on Dev::Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Mon, 11 Apr 2022 14:18:35 +0000</lastBuildDate><atom:link href="https://devb.fun/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Создание сайта на Hugo и его размещение на Github pages</title>
+      <link>https://devb.fun/posts/hugodeploygit/hugo_deploy_github-pages/</link>
+      <pubDate>Mon, 11 Apr 2022 14:18:35 +0000</pubDate>
+      
+      <guid>https://devb.fun/posts/hugodeploygit/hugo_deploy_github-pages/</guid>
+      <description>Создание сайта на Hugo и его размещение на Github pages </description>
+    </item>
+    
+  </channel>
+</rss>
