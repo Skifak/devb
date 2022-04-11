@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://devb.fun/</loc>
+    <lastmod>2022-04-08T11:18:35+00:00</lastmod>
+  </url><url>
+    <loc>https://devb.fun/tags/neomutt/</loc>
+    <lastmod>2022-04-08T11:18:35+00:00</lastmod>
+  </url><url>
+    <loc>https://devb.fun/posts/</loc>
+    <lastmod>2022-04-08T11:18:35+00:00</lastmod>
+  </url><url>
+    <loc>https://devb.fun/tags/</loc>
+    <lastmod>2022-04-08T11:18:35+00:00</lastmod>
+  </url><url>
+    <loc>https://devb.fun/tags/%D0%BF%D0%BE%D1%87%D1%82%D0%B0/</loc>
+    <lastmod>2022-04-08T11:18:35+00:00</lastmod>
+  </url><url>
+    <loc>https://devb.fun/posts/mutt/mutt/</loc>
+    <lastmod>2022-04-08T11:18:35+00:00</lastmod>
+  </url><url>
+    <loc>https://devb.fun/categories/</loc>
+  </url>
+</urlset>
