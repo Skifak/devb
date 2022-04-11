@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Import-b9fe on Dev::Blog</title>
+    <link>https://devb.fun/tags/import-b9fe/</link>
+    <description>Recent content in Import-b9fe on Dev::Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Mon, 11 Apr 2022 13:21:06 +0000</lastBuildDate><atom:link href="https://devb.fun/tags/import-b9fe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Создание сайта на Hugo и его размещение на Github pages</title>
+      <link>https://devb.fun/posts/hugodeploygit/notes/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B0%D0%B9%D1%82%D0%B0-%D0%BD%D0%B0-hugo-%D0%B8-%D0%B5%D0%B3%D0%BE-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-github-pages/</link>
+      <pubDate>Mon, 11 Apr 2022 13:21:06 +0000</pubDate>
+      
+      <guid>https://devb.fun/posts/hugodeploygit/notes/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B0%D0%B9%D1%82%D0%B0-%D0%BD%D0%B0-hugo-%D0%B8-%D0%B5%D0%B3%D0%BE-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-github-pages/</guid>
+      <description>tags: [hugo, github, гайды] title: Создание сайта на Hugo и его размещение на Github pages created: &amp;lsquo;2022-04-11T14:18:36.726Z&amp;rsquo; modified: &amp;lsquo;2022-04-11T14:18:35.726Z&amp;rsquo; Сегодня</description>
+    </item>
+    
+  </channel>
+</rss>
