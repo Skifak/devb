@@ -1,0 +1,38 @@
+
+{
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+    "articles": [{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/post2/","summary":"","tags":["tag1","tag2","tag3"],"title":"Post2"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/post1/","summary":"","tags":["tag1","tag2","tag3"],"title":"Post1"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/chatgpt/","summary":"","tags":["tag1","tag2","tag3"],"title":"Chatgpt"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/parser/","summary":"","tags":["tag1","tag2","tag3"],"title":"Parser"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/hugo/","summary":"","tags":["tag1","tag2","tag3"],"title":"Hugo"}],
+    "test": "Post2   Post1   Chatgpt   Parser   Hugo   Manifest   Search   ",
+    "page": "1",
+    "next": 
+        "https://devb.fun/page/2/index.json"
+    
+}
+
