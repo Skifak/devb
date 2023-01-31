@@ -16,8 +16,12 @@
         
         
     
-    "articles": [{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/search/","summary":"","tags":[],"title":"Search"}],
-    "test": "Post2   Post1   Chatgpt   Parser   Hugo   Manifest   Search   ",
+        
+        
+        
+    
+    "articles": [{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/hugo/","summary":"","tags":["tag1","tag2","tag3"],"title":"Hugo"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/search/","summary":"","tags":[],"title":"Search"}],
+    "test": "Post   Post2   Post1   Chatgpt   Parser   Hugo   Manifest   Search   ",
     "page": "2",
     "next": ""
 }
