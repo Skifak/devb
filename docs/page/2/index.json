@@ -20,8 +20,16 @@
         
         
     
-    "articles": [{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/hugo/","summary":"","tags":["tag1","tag2","tag3"],"title":"Hugo"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/search/","summary":"","tags":[],"title":"Search"}],
-    "test": "Post   Post2   Post1   Chatgpt   Parser   Hugo   Manifest   Search   ",
+        
+        
+        
+    
+        
+        
+        
+    
+    "articles": [{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/parser/","summary":"","tags":["tag1","tag2","tag3"],"title":"Parser"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/hugo/","summary":"","tags":["tag1","tag2","tag3"],"title":"Hugo"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/posts/hugo/hugo/","summary":"title: \u0026#34;{{ replace (replace .Name \u0026#34;-\u0026#34; \u0026#34; \u0026#34;) \u0026#34;_\u0026#34; \u0026#34; \u0026#34; | title }}\u0026#34; date: {{ .Date }} tags:  - tag1  - tag2  - tag3 image: https://ocl-steinberg-live.steinberg.net/_storage/asset/178442/storage/PNG_large_2000px/178442-large.png comments: true Создание блога с помощью Hugo+GitHub pages Считаю правильным начать ведение этого блога с гайда по установке Hugo.\nHugo - это открытый исходный генератор статических сайтов, который получил большую популярность среди блогеров и веб-разработчиков. Он используется для создания и поддержания веб-сайтов и блогов, основанных на статических страницах.","tags":[],"title":""},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/search/","summary":"","tags":[],"title":"Search"}],
+    "test": "Post32   Post3   Post2   Post1   Chatgpt   Parser   Hugo      Manifest   Search   ",
     "page": "2",
     "next": ""
 }

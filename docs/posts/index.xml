@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Some copyright notice - [my license](https://example.com/license)</copyright>
-    <lastBuildDate>Tue, 31 Jan 2023 03:13:40 +0300</lastBuildDate><atom:link href="https://devb.fun/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Jan 2023 03:15:34 +0300</lastBuildDate><atom:link href="https://devb.fun/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post</title>
-      <link>https://devb.fun/posts/post/</link>
-      <pubDate>Tue, 31 Jan 2023 03:13:40 +0300</pubDate>
+      <title>Post32</title>
+      <link>https://devb.fun/posts/post32/</link>
+      <pubDate>Tue, 31 Jan 2023 03:15:34 +0300</pubDate>
       
-      <guid>https://devb.fun/posts/post/</guid>
+      <guid>https://devb.fun/posts/post32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post3</title>
+      <link>https://devb.fun/posts/post3/</link>
+      <pubDate>Tue, 31 Jan 2023 03:15:22 +0300</pubDate>
+      
+      <guid>https://devb.fun/posts/post3/</guid>
       <description></description>
     </item>
     
@@ -60,6 +69,16 @@
       
       <guid>https://devb.fun/posts/hugo/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://devb.fun/posts/hugo/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devb.fun/posts/hugo/hugo/</guid>
+      <description>title: &amp;#34;{{ replace (replace .Name &amp;#34;-&amp;#34; &amp;#34; &amp;#34;) &amp;#34;_&amp;#34; &amp;#34; &amp;#34; | title }}&amp;#34; date: {{ .Date }} tags:  - tag1  - tag2  - tag3 image: https://ocl-steinberg-live.steinberg.net/_storage/asset/178442/storage/PNG_large_2000px/178442-large.png comments: true Создание блога с помощью Hugo+GitHub pages Считаю правильным начать ведение этого блога с гайда по установке Hugo.
+Hugo - это открытый исходный генератор статических сайтов, который получил большую популярность среди блогеров и веб-разработчиков. Он используется для создания и поддержания веб-сайтов и блогов, основанных на статических страницах.</description>
     </item>
     
   </channel>
