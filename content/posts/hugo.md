@@ -24,9 +24,8 @@ Hugo также обладает множеством тем и шаблонов
 ## Необходимый софт для реализации
 
 - [hugo](https://gohugo.io/)
-  
+
 - [git](https://git-scm.com/)
-  
 
 ## Установка Hugo
 
@@ -139,15 +138,9 @@ draft: true
 
 После успешного деплоя сайта в репозиторий, открываем настройки репозитория и идем в раздел Settings
 
-![Снимок экрана от 20230205 022059png](file:///home/an/.var/app/com.github.marktext.marktext/config/marktext/images/f766e2e9ac11ce6edff16d79b35f1b6ce1b5f839.png?msec=1675553634385)
-
 Далее в Pages
 
-![Снимок экрана от 20230205 022119png](file:///home/an/.var/app/com.github.marktext.marktext/config/marktext/images/2ee63798bbb8cc12af67ebe93167b2b7447ddeef.png?msec=1675553634387)
-
 И производим настройку репозитория данным образом
-
-![Снимок экрана от 20230205 022131png](file:///home/an/.var/app/com.github.marktext.marktext/config/marktext/images/4686bb38c265d7301e21a4201a5dccd18cdd6c16.png?msec=1675553634388)
 
 Теперь снова вернёмся в терминал и в корневой папке сайта выполним следующие команды:
 
