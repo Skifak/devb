@@ -2,46 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://devb.fun/tags/blog/</loc>
+    <lastmod>2023-02-05T02:52:52+03:00</lastmod>
+  </url><url>
     <loc>https://devb.fun/</loc>
-    <lastmod>2023-01-31T03:15:34+03:00</lastmod>
+    <lastmod>2023-02-05T02:52:52+03:00</lastmod>
   </url><url>
-    <loc>https://devb.fun/posts/post32/</loc>
-    <lastmod>2023-01-31T03:15:34+03:00</lastmod>
+    <loc>https://devb.fun/tags/github/</loc>
+    <lastmod>2023-02-05T02:52:52+03:00</lastmod>
   </url><url>
-    <loc>https://devb.fun/posts/</loc>
-    <lastmod>2023-01-31T03:15:34+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/tags/tag1/</loc>
-    <lastmod>2023-01-31T03:15:34+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/tags/tag2/</loc>
-    <lastmod>2023-01-31T03:15:34+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/tags/tag3/</loc>
-    <lastmod>2023-01-31T03:15:34+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/tags/</loc>
-    <lastmod>2023-01-31T03:15:34+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/posts/post3/</loc>
-    <lastmod>2023-01-31T03:15:22+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/posts/post2/</loc>
-    <lastmod>2023-01-31T02:04:28+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/posts/post1/</loc>
-    <lastmod>2023-01-31T02:04:21+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/posts/chatgpt/</loc>
-    <lastmod>2023-01-31T02:04:15+03:00</lastmod>
-  </url><url>
-    <loc>https://devb.fun/posts/parser/</loc>
-    <lastmod>2023-01-31T02:04:07+03:00</lastmod>
+    <loc>https://devb.fun/tags/hugo/</loc>
+    <lastmod>2023-02-05T02:52:52+03:00</lastmod>
   </url><url>
     <loc>https://devb.fun/posts/hugo/</loc>
-    <lastmod>2023-01-31T02:03:30+03:00</lastmod>
+    <lastmod>2023-02-05T02:52:52+03:00</lastmod>
   </url><url>
-    <loc>https://devb.fun/posts/hugo/hugo/</loc>
+    <loc>https://devb.fun/posts/</loc>
+    <lastmod>2023-02-05T02:52:52+03:00</lastmod>
+  </url><url>
+    <loc>https://devb.fun/tags/</loc>
+    <lastmod>2023-02-05T02:52:52+03:00</lastmod>
   </url><url>
     <loc>https://devb.fun/categories/</loc>
   </url><url>

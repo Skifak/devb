@@ -10,13 +10,9 @@
     
         
         
-        
-    
-        
-        
-        
-    
-        
+            
+                
+            
         
         
     
@@ -28,11 +24,9 @@
         
         
     
-    "articles": [{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/post32/","summary":"","tags":["tag1","tag2","tag3"],"title":"Post32"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/post3/","summary":"","tags":["tag1","tag2","tag3"],"title":"Post3"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/post2/","summary":"","tags":["tag1","tag2","tag3"],"title":"Post2"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/post1/","summary":"","tags":["tag1","tag2","tag3"],"title":"Post1"},{"date":"2023-01-31","image":"","imageAlt":"","link":"https://devb.fun/posts/chatgpt/","summary":"","tags":["tag1","tag2","tag3"],"title":"Chatgpt"}],
-    "test": "Post32   Post3   Post2   Post1   Chatgpt   Parser   Hugo      Manifest   Search   ",
+    "articles": [{"date":"2023-02-05","image":"/images/post_pics/hugo/prev.png","imageAlt":"","link":"https://devb.fun/posts/hugo/","summary":"Создание блога с помощью Hugo+GitHub pages Считаю правильным начать ведение этого блога с гайда по установке Hugo.\nHugo - это открытый исходный генератор статических сайтов, который получил большую популярность среди блогеров и веб-разработчиков. Он используется для создания и поддержания веб-сайтов и блогов, основанных на статических страницах. Для контента Hugo использует в качестве языка разметки Markdown.\nОдним из основных преимуществ Hugo является его скорость. Он может генерировать статические страницы в считанные секунды, что позволяет увеличить скорость загрузки сайта и улучшить пользовательский опыт.","tags":["Blog","GitHub","Hugo"],"title":"Hugo"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://devb.fun/search/","summary":"","tags":[],"title":"Search"}],
+    "test": "Hugo   Manifest   Search   ",
     "page": "1",
-    "next": 
-        "https://devb.fun/page/2/index.json"
-    
+    "next": ""
 }
 

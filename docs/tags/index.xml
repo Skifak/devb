@@ -7,31 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Some copyright notice - [my license](https://example.com/license)</copyright>
-    <lastBuildDate>Tue, 31 Jan 2023 03:15:34 +0300</lastBuildDate><atom:link href="https://devb.fun/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 02:52:52 +0300</lastBuildDate><atom:link href="https://devb.fun/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>tag1</title>
-      <link>https://devb.fun/tags/tag1/</link>
-      <pubDate>Tue, 31 Jan 2023 03:15:34 +0300</pubDate>
+      <title>Blog</title>
+      <link>https://devb.fun/tags/blog/</link>
+      <pubDate>Sun, 05 Feb 2023 02:52:52 +0300</pubDate>
       
-      <guid>https://devb.fun/tags/tag1/</guid>
+      <guid>https://devb.fun/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tag2</title>
-      <link>https://devb.fun/tags/tag2/</link>
-      <pubDate>Tue, 31 Jan 2023 03:15:34 +0300</pubDate>
+      <title>GitHub</title>
+      <link>https://devb.fun/tags/github/</link>
+      <pubDate>Sun, 05 Feb 2023 02:52:52 +0300</pubDate>
       
-      <guid>https://devb.fun/tags/tag2/</guid>
+      <guid>https://devb.fun/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tag3</title>
-      <link>https://devb.fun/tags/tag3/</link>
-      <pubDate>Tue, 31 Jan 2023 03:15:34 +0300</pubDate>
+      <title>Hugo</title>
+      <link>https://devb.fun/tags/hugo/</link>
+      <pubDate>Sun, 05 Feb 2023 02:52:52 +0300</pubDate>
       
-      <guid>https://devb.fun/tags/tag3/</guid>
+      <guid>https://devb.fun/tags/hugo/</guid>
       <description></description>
     </item>
     
