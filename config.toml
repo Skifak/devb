@@ -2,7 +2,7 @@ baseURL = "https://devb.fun/"
 theme = "hugo-ficurinia"
 title = "Dev::Blog"
 languageCode = "en"
-defaultContentLanguage = "en"
+defaultContentLanguage = "ru-ru"
 publishDir = "docs"
 
 # this will be included in the footer after the current year the site is last
@@ -11,7 +11,7 @@ publishDir = "docs"
 copyright = "Some copyright notice - [my license](https://example.com/license)"
 
 paginate = 5  # number of articles per page in the index
-summaryLength = 70  # number of words for article summaries
+summaryLength = 50  # number of words for article summaries
 
 
 [params]
@@ -42,7 +42,7 @@ summaryLength = 70  # number of words for article summaries
     showTags = true  # show the Tags menu item; default true
     showRss = true  # show the link for the RSS feed; default true
 
-    imageInArticlePreview = false  # show images in article preview; default false
+    imageInArticlePreview = true  # show images in article preview; default false
     fitImageInArticlePreview = false  # make article preview images fit the article preview instead of getting cropped
     articleSummary = true  # show a summary in article preview; default true
     
@@ -119,7 +119,7 @@ summaryLength = 70  # number of words for article summaries
     enableJumbotron = false  # enables jumbotron, as described below
     # related articles will be selected randomly based on tags and shown at
     # the bottom of the article, after the comments
-    enableRelatedArticles = false
+    enableRelatedArticles = true
     relatedArticlesNum = 2  # how many related articles to show
     randomRelated = false  # sorts related articles in random order (randomized at built time)
 

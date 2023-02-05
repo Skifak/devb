@@ -138,15 +138,15 @@ draft: true
 
 После успешного деплоя сайта в репозиторий, открываем настройки репозитория и идем в раздел Settings
 
-![1.png](images/post_pics/hugo/1.png)
+![1.png](/images/post_pics/hugo/1.png)
 
 Далее в Pages
 
-![2.png](images/post_pics/hugo/2.png)
+![2.png](/images/post_pics/hugo/2.png)
 
 И производим настройку репозитория данным образом
 
-![3.png](images/post_pics/hugo/3.png)
+![3.png](/images/post_pics/hugo/3.png)
 
 Теперь снова вернёмся в терминал и в корневой папке сайта выполним следующие команды:
 
