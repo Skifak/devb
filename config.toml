@@ -2,7 +2,7 @@ baseURL = "https://devb.fun/"
 theme = "hugo-ficurinia"
 title = "Dev::Blog"
 languageCode = "en"
-defaultContentLanguage = "ru-ru"
+defaultContentLanguage = "en"
 publishDir = "docs"
 
 # this will be included in the footer after the current year the site is last
