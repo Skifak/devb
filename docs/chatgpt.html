@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatGPT API Chat</title>
+  <style>
+    #chat-container {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    #chat-output {
+      width: 100%;
+      height: 300px;
+      border: 1px solid black;
+      overflow-y: scroll;
+      padding: 10px;
+    }
+    #chat-input {
+      width: 100%;
+      height: 50px;
+      border: 1px solid black;
+      margin-top: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-output"></div>
+    <textarea id="chat-input"></textarea>
+    <button id="chat-submit">Submit</button>
+  </div>
+  <script>
+    const output = document.querySelector('#chat-output');
+    const input = document.querySelector('#chat-input');
+    const submit = document.querySelector('#chat-submit');
+
+    submit.addEventListener('click', function() {
+      // send user input to ChatGPT API
+      fetch('https://api.openai.com/v1/engines/davinci/jobs', {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer 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'
+        },
+        body: JSON.stringify({
+          prompt: input.value,
+          max_tokens: 100,
+          temperature: 0.5
+        })
+      })
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        // display ChatGPT API response
+        output.innerHTML += '<p>' + data.choices[0].text + '</p>';
+        input.value = '';
+      });
+    });
+  </script>
+</body>
+</html>
