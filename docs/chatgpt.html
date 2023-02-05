@@ -3,6 +3,20 @@
 <head>
   <title>ChatGPT API Chat</title>
   <style>
+    
+     #chatWindow {
+      height: 300px;
+      width: 500px;
+      border: 1px solid black;
+      padding: 10px;
+      overflow-y: scroll;
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+    
    #chat-container {
   width: 500px;
   height: 500px;
@@ -44,15 +58,12 @@
   </style>
 </head>
 <body>
-  <div id="chat-container">
-  <div id="user-input-container">
-    <input type="text" id="user-input"/>
-    <button id="submit-btn">Submit</button>
-  </div>
-  <div id="chat-window">
-    <div id="chat-history"></div>
-  </div>
-</div>
+  <div id="chatWindow"></div>
+  <form>
+    <input type="text" id="inputText">
+    <button type="submit" id="submitButton">Submit</button>
+  </form>
+  
   <script>
 const API_KEY = "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";
 const ENGINE_ID = "davinci";
