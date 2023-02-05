@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .chat-window {
+        height: 500px;
+        width: 600px;
+        overflow: auto;
+        border: 1px solid black;
+      }
+      .message-block {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat-window">
+      <div id="chat-messages"></div>
+    </div>
+    <br>
+    <input type="text" id="message-input">
+    <button id="send-button">Send</button>
+
+    <script>
+      const chatMessages = document.getElementById("chat-messages");
+      const messageInput = document.getElementById("message-input");
+      const sendButton = document.getElementById("send-button");
+
+      sendButton.addEventListener("click", function() {
+        const message = messageInput.value;
+        if (!message) return;
+
+        const date = new Date();
+        const messageBlock = document.createElement("div");
+        messageBlock.classList.add("message-block");
+        messageBlock.innerHTML = `<p>${message}</p><p>${date}</p>`;
+
+        chatMessages.appendChild(messageBlock);
+        messageInput.value = "";
+      });
+    </script>
+  </body>
+</html>
