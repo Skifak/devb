@@ -2,96 +2,104 @@
 <html>
   <head>
     <style>
-    #inventory-container {
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
+    /* Стили CSS */
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
 
-#inventory-list {
-  list-style: none;
-  padding: 0;
-}
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+      }
 
-.inventory-item {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid gray;
-}
+      input[type="text"],
+      input[type="password"] {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
 
-.item-image {
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  margin-right: 20px;
-}
-
-.item-image img {
-  width: 100%;
-  height: auto;
-}
-
-.item-info h3 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.item-info p {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
-}
+      input[type="submit"] {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
-    <div id="inventory-container">
-  <h2>User Inventory</h2>
-  <ul id="inventory-list">
-    <li class="inventory-item">
-      <div class="item-image">
-        <img src="stalker_ration.png" alt="Stalker Ration">
-      </div>
-      <div class="item-info">
-        <h3>Stalker Ration</h3>
-        <p>Restores 100 health points</p>
-      </div>
-    </li>
-  </ul>
-</div>
+    <div class="container">
+      <!-- Форма для аутентификации -->
+      <form id="auth-form">
+        <input type="text" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="password">
+        <input type="submit" value="Login">
+      </form>
+    </div>
 
-    <script>
-     var inventory = [];
+    <!-- Подключение Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
 
-function addItem(item) {
-  inventory.push(item);
-}
+    
+<!-- Скрипт аутентификации -->
+<script>
+  // Your web app's Firebase configuration
+    const firebaseConfig = {
+    apiKey: "AIzaSyCP_RTSZ7KLdYKI_w4W6cW-ocGmPwkrg48",
+    authDomain: "devbaut.firebaseapp.com",
+    projectId: "devbaut",
+    storageBucket: "devbaut.appspot.com",
+    messagingSenderId: "112207967486",
+    appId: "1:112207967486:web:52d116010e0b7f581f21af"
 
-function removeItem(item) {
-  var index = inventory.indexOf(item);
-  if (index !== -1) {
-    inventory.splice(index, 1);
-  }
-}
+  };
 
-function displayInventory() {
-  var inventoryDiv = document.getElementById("inventory");
-  inventoryDiv.innerHTML = "";
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Sign In
+  document.querySelector("#sign-in-btn").addEventListener("click", function(e) {
+    e.preventDefault();
+    let email = document.querySelector("#email").value;
+    let password = document.querySelector("#password").value;
+
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then(function(user) {
+        console.log("Sign in success", user);
+      })
+      .catch(function(error) {
+        console.error("Sign in error", error);
+      });
+  });
+
+  // Sign Up
+  document.querySelector("#sign-up-btn").addEventListener("click", function(e) {
+    e.preventDefault();
+    let email = document.querySelector("#email").value;
+    let password = document.querySelector("#password").value;
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(function(user) {
+        console.log("Sign up success", user);
+      })
+      .catch(function(error) {
+        console.error("Sign up error", error);
+      });
+  });
+</script>
   
-  for (var i = 0; i < inventory.length; i++) {
-    var item = inventory[i];
-    var itemDiv = document.createElement("div");
-    itemDiv.classList.add("inventory-item");
-    itemDiv.innerHTML = item;
-    inventoryDiv.appendChild(itemDiv);
-  }
-}
-
-addItem("Батон");
-displayInventory();
-    </script>
   </body>
 </html>
