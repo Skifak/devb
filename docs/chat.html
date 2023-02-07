@@ -2,93 +2,96 @@
 <html>
   <head>
     <style>
-      .chat-window {
-        height: 500px;
-        width: 600px;
-        overflow: auto;
-        border: 1px solid black;
-      }
-      .message-block {
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid gray;
-      }
+    #inventory-container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#inventory-list {
+  list-style: none;
+  padding: 0;
+}
+
+.inventory-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.item-image {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.item-image img {
+  width: 100%;
+  height: auto;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
     </style>
   </head>
   <body>
-    <div class="chat-window">
-      <div id="chat-messages"></div>
-    </div>
-    <br>
-    <input type="text" id="message-input">
-    <button id="send-button">Send</button>
+    <div id="inventory-container">
+  <h2>User Inventory</h2>
+  <ul id="inventory-list">
+    <li class="inventory-item">
+      <div class="item-image">
+        <img src="stalker_ration.png" alt="Stalker Ration">
+      </div>
+      <div class="item-info">
+        <h3>Stalker Ration</h3>
+        <p>Restores 100 health points</p>
+      </div>
+    </li>
+  </ul>
+</div>
 
     <script>
-      const chatMessages = document.getElementById("chat-messages");
-      const messageInput = document.getElementById("message-input");
-      const sendButton = document.getElementById("send-button");
-      // Save the message to local storage
-function saveMessage(message) {
-  let messages = JSON.parse(localStorage.getItem('messages')) || [];
-  messages.
-  messages.
+     var inventory = [];
 
-  messages
-push({
-    text: message,
-    date: new Date().toString()
-  });
-  localStorage.setItem('messages', JSON.stringify(messages));
+function addItem(item) {
+  inventory.push(item);
 }
 
-// Load the messages from local storage
-function loadMessages() {
-  let messages = JSON.parse(localStorage.getItem('messages')) || [];
-  for (let i = 0; i < messages.length; i++) {
-    let message = messages[i];
-    displayMessage(message.text, message.date);
+function removeItem(item) {
+  var index = inventory.indexOf(item);
+  if (index !== -1) {
+    inventory.splice(index, 1);
   }
 }
 
-// Display the message in the chat window
-function displayMessage(text, date) {
-  let chatWindow = document.getElementById('chat-window');
-  let messageBlock = document.createElement('div');
-  messageBlock.classList.add('message-block');
-  messageBlock.innerHTML = `
-    <p class="message-text">${text}</p>
-    <p class="message-date">${date}</p>
-  `;
-  chatWindow.appendChild(messageBlock);
+function displayInventory() {
+  var inventoryDiv = document.getElementById("inventory");
+  inventoryDiv.innerHTML = "";
+  
+  for (var i = 0; i < inventory.length; i++) {
+    var item = inventory[i];
+    var itemDiv = document.createElement("div");
+    itemDiv.classList.add("inventory-item");
+    itemDiv.innerHTML = item;
+    inventoryDiv.appendChild(itemDiv);
+  }
 }
 
-// Handle the send button click
-function handleSendButtonClick() {
-  let inputField = document.getElementById('input-field');
-  let message = inputField.value;
-  inputField.value = '';
-  saveMessage(message);
-  displayMessage(message, new Date().toString());
-}
-
-// Add event listeners
-document.addEventListener('DOMContentLoaded', function() {
-  loadMessages();
-  let sendButton = document.getElementById('send-button');
-  sendButton.addEventListener('click', handleSendButtonClick);
-});
-      sendButton.addEventListener("click", function() {
-        const message = messageInput.value;
-        if (!message) return;
-
-        const date = new Date();
-        const messageBlock = document.createElement("div");
-        messageBlock.classList.add("message-block");
-        messageBlock.innerHTML = `<p>${message}</p><p>${date}</p>`;
-
-        chatMessages.appendChild(messageBlock);
-        messageInput.value = "";
-      });
+addItem("Батон");
+displayInventory();
     </script>
   </body>
 </html>
