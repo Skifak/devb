@@ -1,0 +1,106 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>STALKER Shop</title>
+  <style>
+    #shop {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      margin: 0 auto;
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: 10px;
+      text-align: center;
+    }
+    .selected {
+      background-color: lightgray;
+    }
+    .buy-button {
+      display: none;
+      margin-top: 10px;
+    }
+    
+       #inventory {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      margin: 0 auto;
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>STALKER Inventory</h1>
+  <div id="inventory"></div>
+  <br>
+  <h1>STALKER Shop</h1>
+  <div id="shop"></div>
+  <button id="buy-button" class="buy-button">Buy</button>
+ <script>
+    const shop = [
+      {name: "AK-74", image: "ak74.jpg", price: 5000},
+      {name: "Artifact", image: "artifact.jpg", price: 10000},
+      {name: "Bandages", image: "bandages.jpg", price: 500},
+      {name: "Battery", image: "battery.jpg", price: 1000},
+      {name: "Food", image: "food.jpg", price: 300},
+      {name: "Medkit", image: "medkit.jpg", price: 2000},
+      {name: "Ammo", image: "ammo.jpg", price: 1000},
+    ];
+const shopDiv = document.querySelector("#shop");
+const buyButton = document.querySelector("#buy-button");
+let selectedItem;
+
+shop.forEach(item => {
+  const itemDiv = document.createElement("div");
+  itemDiv.classList.add("item");
+  itemDiv.innerHTML = `<img src="${item.image}" alt="${item.name}"><br>${item.name}<br>Price: ${item.price}`;
+  itemDiv.addEventListener("click", () => {
+    if (selectedItem) {
+      selectedItem.classList.remove("selected");
+    }
+    selectedItem = itemDiv;
+    itemDiv.classList.add("selected");
+    buyButton.style.display = "block";
+    buyButton.innerHTML = `Buy ${item.name} (${item.price})`;
+  });
+  shopDiv.appendChild(itemDiv);
+});
+
+buyButton.addEventListener("click", () => {
+  alert(`You have bought ${selectedItem.innerText}`);
+  buyButton.style.display = "none";
+  selectedItem.style.display = "none";
+}); 
+  </script>
+   <script>
+    const inventory = [
+      {name: "AK-74", image: "ak74.jpg"},
+      {name: "Artifact", image: "artifact.jpg"},
+      {name: "Bandages", image: "bandages.jpg"},
+      {name: "Battery", image: "battery.jpg"},
+      {name: "Food", image: "food.jpg"},
+      {name: "Medkit", image: "medkit.jpg"},
+      {name: "Ammo", image: "ammo.jpg"},
+    ];
+  const inventoryDiv = document.querySelector("#inventory");
+
+inventory.forEach(item => {
+  const itemDiv = document.createElement("div");
+  itemDiv.classList.add("item");
+  itemDiv.innerHTML = `<img src="${item.image}" alt="${item.name}"><br>${item.name}`;
+  inventoryDiv.appendChild(itemDiv);
+});
+</script>
+</body>
+</html>
