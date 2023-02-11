@@ -2,77 +2,119 @@
 <html>
   <head>
     <style>
-    /* Стили CSS */
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
+    body {
+  font-family: Arial, sans-serif;
+}
 
-      form {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
-      }
+#inventory, #store, #equipment {
+  list-style: none;
+  padding: 0;
+}
 
-      input[type="text"],
-      input[type="password"] {
-        margin-top: 20px;
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        border: 1px solid gray;
-      }
+.item, .equipment {
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
 
-      input[type="submit"] {
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: blue;
-        color: white;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-      }
+.selected {
+  background-color: lightgray;
+}
     </style>
   </head>
   <body>
-    <button id="signin-btn">Sign in with Google</button>
-
-
-    <!-- Подключение Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-
+   <h1>Money: <span id="money">100</span></h1>
+    <h2>Inventory:</h2>
+    <ul id="inventory">
+    </ul>
+    <h2>Store:</h2>
+    <ul id="store">
+      <li class="item" id="item1">Item 1 - 50</li>
+      <li class="item" id="item2">Item 2 - 75</li>
+      <li class="item" id="item3">Item 3 - 100</li>
+      <li class="item" id="item4">Item 4 - 125</li>
+      <li class="item" id="item5">Item 5 - 150</li>
+    </ul>
+    <button id="buy">Buy</button>
+    <button id="sell" disabled>Sell</button>
+    <h2>Equipment:</h2>
+    <ul id="equipment">
+      <li class="equipment" id="boots">Boots</li>
+      <li class="equipment" id="pants">Pants</li>
+      <li class="equipment" id="vest">Vest</li>
+      <li class="equipment" id="helmet">Helmet</li>
+      <li class="equipment" id="knife">Knife</li>
+      <li class="equipment" id="pistol">Pistol</li>
+      <li class="equipment" id="rifle">Rifle</li>
+    </ul>
+    <button id="unequip">Unequip</button>
+    <button id="equip" disabled>Equip</button>
     
 <!-- Скрипт аутентификации -->
 <script>
-  // Your web app's Firebase configuration
-    const firebaseConfig = {
-    apiKey: "AIzaSyCP_RTSZ7KLdYKI_w4W6cW-ocGmPwkrg48",
-    authDomain: "devbaut.firebaseapp.com",
-    projectId: "devbaut",
-    storageBucket: "devbaut.appspot.com",
-    messagingSenderId: "112207967486",
-    appId: "1:112207967486:web:52d116010e0b7f581f21af"
+  const moneyDisplay = document.querySelector('#money');
+const inventoryList = document.querySelector('#inventory');
+const storeList = document.querySelector('#store');
+const buyButton = document.querySelector('#buy');
+const sellButton = document.querySelector('#sell');
+const equipmentList = document.querySelector('#equipment');
+const unequipButton = document.querySelector('#unequip');
+const equipButton = document.querySelector('#equip');
 
-  };
+  let money = 100;
+let selectedStoreItem = null;
+let selectedInventoryItem = null;
+let selectedEquipment = null;
+let inventory = [];
 
- // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+const storeInventory = [
+{ name: "Boots", price: 20, type: "footwear" },
+{ name: "Pants", price: 15, type: "lowerBody" },
+{ name: "Vest", price: 25, type: "upperBody" },
+{ name: "Helmet", price: 30, type: "headwear" },
+{ name: "Knife", price: 10, type: "weapon" },
+{ name: "Pistol", price: 40, type: "weapon" },
+{ name: "Rifle", price: 50, type: "weapon" },
+];
 
-      // Get the sign-in button
-      var signinBtn = document.getElementById("signin-btn");
+let equipped = {
+footwear: "Boots",
+lowerBody: "Pants",
+upperBody: "Vest",
+headwear: "Helmet",
+weapon: "Knife",
+};
 
-      // Add a click event listener to the sign-in button
-      signinBtn.addEventListener("click", function() {
-        // Sign in using Google
-        var provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider);
-      });
+const updateInventory = (item, type) => {
+if (type === "store") {
+let itemIndex = storeInventory.findIndex((i) => i.name === item.name);
+if (money >= storeInventory[itemIndex].price) {
+money -= storeInventory[itemIndex].price;
+inventory.push(storeInventory[itemIndex]);
+return true;
+} else {
+return false;
+}
+} else if (type === "inventory") {
+let itemIndex = inventory.findIndex((i) => i.name === item.name);
+let equippedIndex = Object.values(equipped).indexOf(item.name);
+if (equippedIndex !== -1) {
+return false;
+} else {
+money += inventory[itemIndex].price;
+equipped[item.type] = item.name;
+inventory.splice(itemIndex, 1);
+return true;
+}
+}
+};
+
+const sellInventoryItem = (item) => {
+let itemIndex = inventory.findIndex((i) => i.name === item.name);
+money += inventory[itemIndex].price;
+inventory.splice(itemIndex, 1);
+};
 </script>
   
   </body>
